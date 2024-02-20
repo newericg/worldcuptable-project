@@ -1,6 +1,6 @@
 .container {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
     padding: 0;
     margin: 0;
     // background-image: url("../assets/1288503.jpg");
@@ -9,9 +9,11 @@
     background-color: #060b11;
     background-size: cover;
 
-    .black-background {
-        width: 100vw;
-        height: 100vh;
+    .home-page {
+        max-width: 60vw;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0 auto;
         background-color: #060b11a2;
         display: flex;
         justify-content: center;
