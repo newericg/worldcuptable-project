@@ -1,0 +1,15 @@
+<div class="form-teams">
+    <form class="example-form" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-form-field">
+            <mat-label>Add Team</mat-label>
+            <input type="text" matInput [formControl]="formControl" placeholder="Ex. Palmeiras">
+            @if (formControl.hasError('required')) {
+            <mat-error>Team <strong>required</strong></mat-error>
+            }
+        </mat-form-field>
+    </form>
+    <div class="buttons-div">
+        <app-button buttonText="Add Team" (onClick)="onSubmit()"></app-button>
+        <app-button buttonText="Reset" (onClick)="onReset()"></app-button>
+    </div>
+</div>

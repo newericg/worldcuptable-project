@@ -1,0 +1,29 @@
+p {
+    color: white;
+    text-align: start;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 100%;
+
+    .div {
+        max-height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+    }
+
+    .div:first-child {
+        flex-direction: column;
+
+        app-button {
+            margin: 55px 0 0 0;
+        }
+    }
+}

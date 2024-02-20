@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding-top: 25px;
+
+    .nav-links {
+        display: flex;
+    }
+    
+    p {
+        margin: 0 25px;
+        cursor: pointer;
+
+        &:hover {
+            color: greenyellow;
+            // font-size: 18px;
+            transition: 500ms;
+        }
+    }
+
+    img {
+        height: 170px;
+        cursor: pointer;
+    }
+
+}

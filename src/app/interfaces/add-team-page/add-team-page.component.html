@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="div">
+        <app-form (addTeam)="addTeamToList($event)" (clearList)="resetList()"></app-form>
+        <app-button buttonText="START CHAMPIONSHIP"></app-button>
+    </div>
+    <div class="div">
+        @if (teamList.length >= 1) {
+            <!-- <p style="text-align: start;">TEAMS</p> -->
+        }
+        <mat-list role="list">
+            @for (team of teamList; track team; let idx = $index) {
+            <mat-list-item role="listitem">
+                <p> {{idx + 1}} - <b> {{ team }} </b></p>
+            </mat-list-item>
+            } @empty {
+            <p>No Teams Added</p>
+            }
+        </mat-list>
+    </div>
+
+
+</div>

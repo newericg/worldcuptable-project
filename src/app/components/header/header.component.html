@@ -1,0 +1,6 @@
+<div class="navbar">
+    <img src="../../../assets/logo-2-removebg-preview.png" routerLink="/" alt="logo-image">
+    <div class="nav-links">
+        <p *ngFor="let item of menuItens; index as i" [routerLink]="item.link"> {{ item.name | uppercase }}</p>
+    </div>
+</div>

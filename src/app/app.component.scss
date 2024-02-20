@@ -1,0 +1,21 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    // background-image: url("../assets/1288503.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #060b11;
+    background-size: cover;
+
+    .black-background {
+        width: 100vw;
+        height: 100vh;
+        background-color: #060b11a2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
