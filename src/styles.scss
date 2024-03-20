@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+//MATERIAL EDITS
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: rgb(168, 168, 168) !important;
+}
+
+.mat-mdc-list-base {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    width: 100%;
+}
+
+.mat-mdc-list-item,
+.mat-mdc-list-option {
+    width: 40% !important;
+    text-align: start !important;
+}
+
+
+//ROUTER TRANSITIONS
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes exit {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+}
+
+//   ::view-transition-old(root) {
+//     animation: 900ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+//       300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+//   }
+
+//   ::view-transition-new(root) {
+//     animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+//       300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+//   }
+
+::view-transition-old(root) {
+    animation: exit 1s ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+    animation: enter 1s ease 0s 1 normal forwards;
+}

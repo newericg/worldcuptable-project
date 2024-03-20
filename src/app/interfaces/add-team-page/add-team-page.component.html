@@ -1,7 +1,7 @@
 <div class="container">
     <div class="div">
         <app-form (addTeam)="addTeamToList($event)" (clearList)="resetList()"></app-form>
-        <app-button buttonText="START CHAMPIONSHIP"></app-button>
+        <app-button (onClick)="startChampionship()" buttonText="START CHAMPIONSHIP"></app-button>
     </div>
     <div class="div">
         @if (teamList.length >= 1) {
@@ -17,6 +17,10 @@
             }
         </mat-list>
     </div>
-
+    @if (loading) {
+        <div class="loader-component">
+            <mat-spinner></mat-spinner>
+        </div>
+    }
 
 </div>

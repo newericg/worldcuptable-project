@@ -10,7 +10,11 @@ export const routes: Routes = [
         component: StartPageComponent,
         data: { animation: 'startPage' }
     },
-    { path: 'table', title: '', component: TablePageComponent },
+    {
+        path: 'table',
+        title: '',
+        component: TablePageComponent
+    },
     {
         path: 'addteams',
         title: '',

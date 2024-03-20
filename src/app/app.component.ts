@@ -20,4 +20,6 @@ export class AppComponent {
 
   title = 'worldcup-project';
 
+  teamList: string[] = []
+
 }
